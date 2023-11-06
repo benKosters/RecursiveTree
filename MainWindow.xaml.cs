@@ -1,19 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Media.Animation;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
-namespace FernNamespace
+namespace TreeNamespace
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -28,13 +15,13 @@ namespace FernNamespace
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Fern f = new Fern(sizeSlider.Value, reduxSlider.Value, biasSlider.Value, canvas);
+            Tree t = new Tree(sizeSlider.Value, reduxSlider.Value, biasSlider.Value, canvas);
         }
 
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Fern f = new Fern(sizeSlider.Value, reduxSlider.Value, biasSlider.Value, canvas);
+            Tree t = new Tree(sizeSlider.Value, reduxSlider.Value, biasSlider.Value, canvas);
         }
     }
 
